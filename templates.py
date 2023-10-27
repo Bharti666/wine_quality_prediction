@@ -27,4 +27,3 @@ for file_ in files:
     with open(file_, 'w') as f:
         pass
 
-    
