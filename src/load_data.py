@@ -8,7 +8,12 @@ def load_and_save(config_path):
     config=read_params(config_path)
     df=get_data(config_path)
     new_cols=[col.replace(" ","_") for col in df.columns]
-    new_cols=new_cols.replace('2222"fixed_acidity"',"fixed_acidity")
+    print(new_cols)
+    for i in new_cols:
+        if i=='2222"fixed_acidity"
+    #new_cols_1=[new_col.replace('2222"fixed_acidity"',"fixed_acidity") for new_col in new_cols]
+    #raw_data_path=config["load_data"]["raw_dataset_csv"]
+    #df.to_csv(raw_data_path,sep=",",index=False,header=new_cols_1)
 
     print(new_cols)
 
