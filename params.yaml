@@ -1,17 +1,17 @@
 base:
   project: wine_quality_project
-  random_stat: 42
+  random_state: 42
   target_col: TARGET
 
 data_source: 
-  s3_source: data_given\winequality-red.csv
+  s3_source: data_given\winequality.csv
 
 load_data:
-  raw_dataset_csv: data\raw\winequaltiy-red.csv
+  raw_dataset_csv: data\raw\winequality.csv
 
 split_data:
-  train_path: data\processed\train_winequaltiy-red.csv
-  test_path: data\processed\test_winequaltiy-red.csv
+  train_path: data\processed\train_winequality.csv
+  test_path: data\processed\test_winequality.csv
   test_size: 0.2
 estimators: 
  ElasticNet: 
